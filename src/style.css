@@ -1,9 +1,0 @@
-html {
-    background: whitesmoke url(./static/images/bg.jpg) repeat;
-    height: 100%;
-}
-
-#root {
-    color: rgb(226, 196, 196);
-    background: yellow;
-}
