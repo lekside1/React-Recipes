@@ -1,27 +1,39 @@
 import React from 'react';
 
-const RecipeDetail = (props) => (
-    <div style={props.style}>
-       <h2>Creepy Halloween Skull Cupcakess</h2>
-       <img src="src/static/images/meowth.png" height='300px' width='300px'/>
-       <div>
-           <span>Desert</span>
-           <span>1200 cal</span>
-       </div>
-       <h3>Ingredients</h3>
-       <ul>
-            <li>1 package</li>
-            <li>2 spoons of sugar</li>
-            <li>3 eggs</li>
-       </ul>
-       <h3>Steps</h3>
-       <ol>
-            <li>Do this</li>
-            <li>Do that</li>
-            <li>Do even this</li>
-            <li>Do even that</li>
-       </ol>
-    </div>
-);
+const RecipeDetail = (props) => {
+    if(!props.recipe) {
+        return (
+            <p style={props.style}>
+                Please select a recipe to see the detail.
+            </p>
+        );
+    }
+    return (
+        <div style={props.style}>
+            <h2>{props.recipe.name}</h2>
+            <img src={props.recipe.image}/>
+            <div>
+                <span>{props.recipe.category} </span>
+                <span>{props.recipe.calories} cal</span>
+            </div>
+            <h3>Ingredients</h3>
+            <ul>
+                {props.recipe.ingredients.map(ingredient => (
+                    <li key={ingredient}>
+                        {ingredient}
+                    </li>
+                ))}
+            </ul>
+            <h3>Steps</h3>
+            <ol>
+                {props.recipe.steps.map(step => (
+                    <li key={step}>
+                        {step}
+                    </li>
+                ))}
+            </ol>
+        </div>
+    );
+};
 
 export default RecipeDetail;
