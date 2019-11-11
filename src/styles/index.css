@@ -12,13 +12,10 @@
     --lime: #cdebdb;
 }
 
-* {
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
