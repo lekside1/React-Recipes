@@ -16,7 +16,6 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route path="/favorites" component={Favorites} />
         <Route path="/favourites">
-          {' '}
           <Redirect to="/favorites" />
         </Route>
         <Route component={NotFound} />
