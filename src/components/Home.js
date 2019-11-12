@@ -8,6 +8,7 @@ class Home extends React.Component {
 
     this.state = {
       recipes: [],
+      favorites: [],
       currentRecipe: null,
     };
   }
@@ -28,16 +29,29 @@ class Home extends React.Component {
       });
   };
 
+  toggleFavorite = id => {
+    this.setState(({ favorites, ...state }) => {
+      const idx = favorites.indexOf(id);
+
+      if (idx !== -1) {
+        return { ...state, favorites: favorites.filter(f => f.id === id) };
+      }
+      return { ...state, favorites: [...favorites, id] };
+    });
+  }
+
   render() {
-    const { recipes, currentRecipe } = this.state;
+    const { recipes, favorites, currentRecipe } = this.state;
 
     return (
       <div>
         <main className="px4 flex">
           <RecipeList
             recipes={recipes}
+            favorites={favorites}
             style={{ flex: 3 }}
             onClick={this.onRecipeClick}
+            onFavorited={this.toggleFavorite}
           />
           <RecipeDetail
             recipe={currentRecipe}
