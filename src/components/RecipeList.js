@@ -9,10 +9,10 @@ const RecipeList = ({
   ...props
 }) => (
   <div style={style}>
-    <h2 className="h2">Recipes</h2>
     <ul className="list-reset">
       {recipes.map(recipe => (
         <RecipeListItem
+          key={recipe.id}
           recipe={recipe}
           favorited={favorites.includes(recipe.id)}
           {...props}
@@ -24,10 +24,8 @@ const RecipeList = ({
 
 RecipeList.propTypes = {
   style: PropTypes.object,
-  recipes: PropTypes.array,
   favorites: PropTypes.array,
-  onClick: PropTypes.func,
-  onFavorited: PropTypes.func,
+  recipes: PropTypes.array,
 };
 
 export default RecipeList;

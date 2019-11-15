@@ -35,4 +35,10 @@ RecipeListItem.propTypes = {
   onFavorited: PropTypes.func,
 };
 
+// RecipeListItem.defaultProps = {
+//   recipe: {},
+//   onClick: () => {},
+//   onFavorited: () => {},
+// };
+
 export default RecipeListItem;
