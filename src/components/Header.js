@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 const HeaderLink = ({ children, ...props }) => (
   <NavLink
     exact
-    className="p1 mx2 black rounded text-decoration-none"
-    activeClassName="bg-white"
+    className="p1 mx2 white rounded text-decoration-none"
+    activeClassName="bg-gray"
     {...props}
   >
     {children}

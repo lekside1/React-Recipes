@@ -8,7 +8,7 @@ const RecipeDetail = props => {
     return (
       <p
         style={props.style}
-        className={classNames('h3 p2 bg-white italic center', props.className)}
+        className={classNames('h3 p2 bg-gray italic center', props.className)}
       >
         Please select a recipe to see the detail.
       </p>
@@ -18,7 +18,7 @@ const RecipeDetail = props => {
   return (
     <div
       style={props.style}
-      className={classNames('p2 bg-white', props.className)}
+      className={classNames('p2 bg-gray', props.className)}
     >
       <h2 className="h2">{props.recipe.name}</h2>
       <img className="fit" src={props.recipe.image} alt={props.recipe.name} />
@@ -38,7 +38,7 @@ const RecipeDetail = props => {
           <li key={step}>{step}</li>
         ))}
         <Link to={`/recipe/${props.recipe.id}`}>
-          See More
+          <p className="blue italic">See More</p>
         </Link>
       </ol>
     </div>

@@ -1,13 +1,14 @@
 {
     "parser": "babel-eslint",
-    "env": {
-        "browser": true,
-        "es6": true
-    },
     "extends": [
         "prettier",
         "airbnb"
     ],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest/globals": true
+    },
     "globals": {
         "API_URL": true,
         "Atomics": "readonly",
@@ -21,7 +22,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
     "rules": {
         "react/jsx-filename-extension": 0,
