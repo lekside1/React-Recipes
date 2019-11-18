@@ -14,7 +14,6 @@ const testRecipe = [
 describe('<RecipeListItem />', () => {
   let component;
   let tree;
-
   test('Should not break if no recipe passed', () => {
     expect(() => renderer.create(<RecipeListItem />)).not.toThrow();
   });

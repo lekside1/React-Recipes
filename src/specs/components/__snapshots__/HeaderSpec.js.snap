@@ -7,7 +7,14 @@ exports[`Should Render Header 1`] = `
   <h1
     className="h1"
   >
-    🍽 MyRecipes
+    <a
+      className="text-decoration-none"
+      href="/"
+      onClick={[Function]}
+    >
+      🍽
+    </a>
+     MyRecipes
   </h1>
   <nav>
     <a

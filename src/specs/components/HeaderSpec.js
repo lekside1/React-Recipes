@@ -9,5 +9,6 @@ it('Should Render Header', () => {
       <Header />
     </BrowserRouter>,
   ).toJSON();
+
   expect(tree).toMatchSnapshot();
 });
