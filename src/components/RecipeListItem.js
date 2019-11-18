@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const RecipeListItem = ({
   recipe,
@@ -25,6 +26,16 @@ const RecipeListItem = ({
     </span>
     <span>{recipe.name} </span>
     <span>{recipe.category}</span>
+    <span
+      className="ml1"
+      onClick={() => (onClick(recipe.id))}
+      role="img"
+      aria-label="more-details"
+    >
+      <Link className="text-decoration-none" to={`/recipe/${recipe.id}`}>
+        {favorited ? '➕' : ''}
+      </Link>
+    </span>
   </li>
 );
 
@@ -35,10 +46,10 @@ RecipeListItem.propTypes = {
   onFavorited: PropTypes.func,
 };
 
-// RecipeListItem.defaultProps = {
-//   recipe: {},
-//   onClick: () => {},
-//   onFavorited: () => {},
-// };
+RecipeListItem.defaultProps = {
+  recipe: {},
+  onClick: () => {},
+  onFavorited: () => {},
+};
 
 export default RecipeListItem;

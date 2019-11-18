@@ -2,16 +2,13 @@
 @import "basscss-colors";
 @import "basscss-background-colors";
 @import "./border";
+@import "./colors";
 @import "./fonts";
 @import "./shame";
 
 :root {
     --h1: 70px;
     --h2: 50px;
-    --black: #222;
-    --lime: #cdebdb;
-    --gray: #383638;
-    --white: #F5F5F5;  /*whitesmoke*/
 }
 
 *, *:before, *:after {

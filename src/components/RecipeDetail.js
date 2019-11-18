@@ -15,6 +15,8 @@ const RecipeDetail = props => {
     );
   }
 
+  const location = window.location.pathname;
+
   return (
     <div
       style={props.style}
@@ -37,9 +39,9 @@ const RecipeDetail = props => {
         {props.recipe.steps.map(step => (
           <li key={step}>{step}</li>
         ))}
-        <Link to={`/recipe/${props.recipe.id}`}>
-          <p className="blue italic">See More</p>
-        </Link>
+        {location === `/recipe/${props.recipe.id}`
+          ? <Link to="/" className="text-decoration-none"><span role="img" aria-label="less-detail">➖</span></Link>
+          : <Link to={`/recipe/${props.recipe.id}`} className="text-decoration-none"><span role="img" aria-label="more-detail">➕</span></Link>}
       </ol>
     </div>
   );

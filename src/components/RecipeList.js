@@ -4,8 +4,8 @@ import RecipeListItem from './RecipeListItem';
 
 const RecipeList = ({
   style,
-  favorites,
   recipes,
+  favorites,
   ...props
 }) => (
   <div style={style}>
@@ -24,8 +24,13 @@ const RecipeList = ({
 
 RecipeList.propTypes = {
   style: PropTypes.object,
-  favorites: PropTypes.array,
   recipes: PropTypes.array,
+  favorites: PropTypes.array,
+};
+
+RecipeList.defaultProps = {
+  recipes: [],
+  favorites: [],
 };
 
 export default RecipeList;

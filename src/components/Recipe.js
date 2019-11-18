@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import RecipeDetail from './RecipeDetail';
 
-// eslint-disable-next-line react/prefer-stateless-function
 class Recipe extends React.Component {
   constructor(props) {
     super(props);
