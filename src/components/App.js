@@ -54,9 +54,7 @@ class App extends React.Component {
                 <Favorites state={this.state} toggleFavorite={this.toggleFavorite} />
               )}
             />
-            <Route path="/favourites">
-              <Redirect to="/favorites" />
-            </Route>
+            <Route path="/favourites"><Redirect to="/favorites" /></Route>
             <Route path="/recipe/:id" component={Recipe} />
             <Route component={NotFound} />
           </Switch>

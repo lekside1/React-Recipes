@@ -26,6 +26,7 @@ const RecipeListItem = ({
     </span>
     <span>{recipe.name} </span>
     <span>{recipe.category}</span>
+
     <span
       className="ml1"
       onClick={() => (onClick(recipe.id))}
