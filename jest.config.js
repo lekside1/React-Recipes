@@ -1,4 +1,4 @@
 module.exports = {
-  testRegex: '/src/.*?(Spec)\\.js$',
+  testRegex: '/src/.*?(test)\\.js$',
   modulePathIgnorePatterns: ['node_modules', 'dist'],
 };
