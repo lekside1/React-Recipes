@@ -1,6 +1,6 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
-import { Redirect } from 'react-router-dom';
+import { Switch, Redirect } from 'react-router-dom';
 
 
 class Welcome extends React.Component {
@@ -18,7 +18,7 @@ class Welcome extends React.Component {
 
   render() {
     return this.state.redirect
-      ? <Redirect to="/home" />
+      ? <Switch><Redirect to="/home" /></Switch>
       : (
         <Spring
           from={{ opacity: 0, marginLeft: -500 }}

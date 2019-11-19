@@ -6,11 +6,13 @@
 
 .link {
     position: absolute;
-    bottom: 40px;
+    bottom: 35px;
     left: -5px;
     width: inherit;
 }
 
-.btn-height {
-    height: 25px;
+.btn {
+    height: 35px;
+    font-size: smaller;
+    background-color: #70E520;
 }
