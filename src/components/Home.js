@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { Spring, animated as a, Transition } from 'react-spring/renderprops';
 import RecipeList from './RecipeList';
 import RecipeDetail from './RecipeDetail';
 
@@ -10,15 +9,8 @@ class Home extends React.Component {
 
     this.state = {
       currentRecipe: null,
-      // show: true,
     };
   }
-
-  // toggle = () => (
-  //   this.setState({
-  //     show: !state.show,
-  //   })
-  // );
 
   onRecipeClick = id => {
     fetch(`${API_URL}/v1/recipes/${id}`)
@@ -35,7 +27,7 @@ class Home extends React.Component {
     return (
       <div>
         <main className="px4 flex">
-          <div style={{ flex: 3 }}>
+          <div style={{ flex: 3 }} className="p1">
             <h2 className="h2">Recipes</h2>
             <RecipeList
               recipes={recipes}
@@ -44,18 +36,6 @@ class Home extends React.Component {
               onFavorited={this.props.toggleFavorite}
             />
           </div>
-          {/* <div>
-            <Transition
-              items={this.state.show}
-              from={{ position: 'absolute', opacity: 0 }}
-              enter={{ opacity: 1 }}
-              leave={{ opacity: 0 }}
-            >
-              {show => (show
-                ? props => <div style={props}><span role="img" aria-label="peace">😄</span></div>
-                : props => <div style={props}><span role="img" aria-label="peace">🤪</span></div>)}
-            </Transition>
-          </div> */}
           <RecipeDetail
             recipe={currentRecipe}
             className="ml4"
@@ -70,6 +50,11 @@ class Home extends React.Component {
 Home.propTypes = {
   state: PropTypes.object,
   toggleFavorite: PropTypes.func,
+};
+
+Home.defaultProps = {
+  state: {},
+  toggleFavorite: () => {},
 };
 
 export default Home;

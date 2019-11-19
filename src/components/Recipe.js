@@ -35,4 +35,8 @@ Recipe.propTypes = {
   match: PropTypes.object,
 };
 
+Recipe.defaultProps = {
+  match: {},
+};
+
 export default Recipe;

@@ -2,10 +2,12 @@ import React from 'react';
 // eslint-disable-next-line object-curly-newline
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from './Header';
+import Welcome from './Welcome';
 import Home from './Home';
 import Favorites from './Favorites';
-import NotFound from './NotFound';
 import Recipe from './Recipe';
+import NotFound from './NotFound';
+import Footer from './Footer';
 
 class App extends React.Component {
   constructor(props) {
@@ -40,10 +42,10 @@ class App extends React.Component {
         <main>
           <Header />
           <Switch>
-            <Redirect from="/home" to="/" />
+            <Redirect from="/welcome" to="/" />
+            <Route exact path="/" component={Welcome} />
             <Route
-              exact
-              path="/"
+              path="/home"
               render={() => (
                 <Home state={this.state} toggleFavorite={this.toggleFavorite} />
               )}
@@ -58,6 +60,7 @@ class App extends React.Component {
             <Route path="/recipe/:id" component={Recipe} />
             <Route component={NotFound} />
           </Switch>
+          <Footer />
         </main>
       </BrowserRouter>
     );

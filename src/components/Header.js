@@ -14,11 +14,12 @@ const HeaderLink = ({ children, ...props }) => (
 );
 
 const Header = () => (
-  <header className="flex items-center justify-between px4">
+  <header className="flex items-center justify-between px4 mb1">
     <h1 className="h1"><Link to="/" className="text-decoration-none">🍽</Link> MyRecipes</h1>
     <nav>
-      <HeaderLink to="/">Home</HeaderLink>
-      <HeaderLink to="/favorites">Favorite</HeaderLink>
+      <HeaderLink to="/home">Home</HeaderLink>
+      <HeaderLink to="/favorites">Favorites</HeaderLink>
+      {/* <HeaderLink to="/welcome">Welcome</HeaderLink> */}
     </nav>
   </header>
 );

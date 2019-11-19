@@ -20,4 +20,10 @@ Favorites.propTypes = {
   recipe: PropTypes.object,
 };
 
+Favorites.defaultProps = {
+  state: {},
+  toggleFavorite: () => {},
+  recipe: {},
+};
+
 export default Favorites;

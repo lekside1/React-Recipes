@@ -40,7 +40,7 @@ const RecipeDetail = props => {
           <li key={step}>{step}</li>
         ))}
         {location === `/recipe/${props.recipe.id}`
-          ? <Link to="/" className="text-decoration-none"><span role="img" aria-label="less-detail">➖</span></Link>
+          ? <Link to="/home" className="text-decoration-none"><span role="img" aria-label="less-detail">➖</span></Link>
           : <Link to={`/recipe/${props.recipe.id}`} className="text-decoration-none"><span role="img" aria-label="more-detail">➕</span></Link>}
       </ol>
     </div>
@@ -51,6 +51,12 @@ RecipeDetail.propTypes = {
   recipe: PropTypes.object,
   style: PropTypes.object,
   className: PropTypes.string,
+};
+
+RecipeDetail.defaultProps = {
+  recipe: {},
+  style: {},
+  className: '',
 };
 
 export default RecipeDetail;
