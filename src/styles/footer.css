@@ -1,0 +1,18 @@
+.phantom {
+    display: block;
+    padding: 15px;
+    height: 15px;
+    width: inherit;
+}
+
+.footer {
+    text-align: left;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10;
+    width: 100%;
+    background-color: var(--gray);
+    margin-top: 1px;
+}

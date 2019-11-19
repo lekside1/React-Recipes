@@ -13,28 +13,11 @@ const FooterLink = ({ children, ...props }) => (
   </NavLink>
 );
 
-const phantom = {
-  display: 'block',
-  padding: '15px',
-  height: '15px',
-  width: 'inherit',
-};
-
-const style = {
-  textAlign: 'left',
-  padding: '15px',
-  position: 'fixed',
-  left: '0',
-  bottom: '0',
-  height: '15px',
-  width: '100%',
-};
-
 const Footer = () => (
   <footer>
     <div>
-      <div style={phantom} />
-      <div style={style} className="bg-gray mt1">
+      <div className="phantom" />
+      <div className="footer">
         <FooterLink to="/">Welcome</FooterLink>
         <FooterLink to="/about">About</FooterLink>
       </div>

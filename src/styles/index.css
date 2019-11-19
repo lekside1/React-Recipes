@@ -5,16 +5,23 @@
 @import "./colors";
 @import "./fonts";
 @import "./shame";
+@import "./notfound";
+@import "./footer";
 
 :root {
     --h1: 70px;
     --h2: 50px;
 }
 
+
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
     margin: 0px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 body {

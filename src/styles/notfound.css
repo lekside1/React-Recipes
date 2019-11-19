@@ -1,0 +1,16 @@
+.outer-div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.link {
+    position: absolute;
+    bottom: 40px;
+    left: -5px;
+    width: inherit;
+}
+
+.btn-height {
+    height: 25px;
+}
