@@ -3,13 +3,11 @@ import { mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 import RecipeListItem from '../../components/RecipeListItem';
 
-const testRecipe = [
-  {
-    id: 1,
-    name: 'Test recipe 1',
-    category: 'Dessert',
-  },
-];
+const testRecipe = {
+  id: 1,
+  name: 'Test recipe',
+  category: 'Dessert',
+};
 
 describe('<RecipeListItem />', () => {
   let component;
@@ -19,14 +17,14 @@ describe('<RecipeListItem />', () => {
     expect(() => renderer.create(<RecipeListItem />)).not.toThrow();
   });
 
-  test('Should render RecipeListItem recipe', () => {
+  test('Should render passed recipe', () => {
     component = renderer.create(<RecipeListItem recipe={testRecipe} />);
     tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 
-  test('Should render RecipeListItem favorited recipe', () => {
+  test('Should render favorited state', () => {
     component = renderer.create(
       <RecipeListItem recipe={testRecipe} favorited />,
     );
@@ -37,6 +35,7 @@ describe('<RecipeListItem />', () => {
 
   test('Should call onClick when clicked', () => {
     const onClick = jest.fn();
+
     component = mount(<RecipeListItem recipe={testRecipe} onClick={onClick} />);
     component.simulate('click');
 

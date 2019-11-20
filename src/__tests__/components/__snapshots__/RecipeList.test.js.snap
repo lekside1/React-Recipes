@@ -6,17 +6,16 @@ exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
     className="list-reset"
   >
     <li
-      className="py2 border-bottom border-bottom-dashed pointer"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap"
       onClick={[Function]}
     >
-      <span
-        aria-label="favorite"
-        className="mr1"
+      <div
+        className="inline-block animated mr1"
         onClick={[Function]}
-        role="img"
+        role="button"
       >
         ⬜️
-      </span>
+      </div>
       <span>
         Test recipe 1
          
@@ -29,17 +28,16 @@ exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
       </span>
     </li>
     <li
-      className="py2 border-bottom border-bottom-dashed pointer"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap"
       onClick={[Function]}
     >
-      <span
-        aria-label="favorite"
-        className="mr1"
+      <div
+        className="inline-block animated mr1"
         onClick={[Function]}
-        role="img"
+        role="button"
       >
         ⬜️
-      </span>
+      </div>
       <span>
         Test recipe 2
          
@@ -61,17 +59,16 @@ exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
     className="list-reset"
   >
     <li
-      className="py2 border-bottom border-bottom-dashed pointer"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap"
       onClick={[Function]}
     >
-      <span
-        aria-label="favorite"
-        className="mr1"
+      <div
+        className="inline-block animated mr1"
         onClick={[Function]}
-        role="img"
+        role="button"
       >
         ⬜️
-      </span>
+      </div>
       <span>
         Test recipe 1
          
@@ -84,17 +81,16 @@ exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
       </span>
     </li>
     <li
-      className="py2 border-bottom border-bottom-dashed pointer"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap"
       onClick={[Function]}
     >
-      <span
-        aria-label="favorite"
-        className="mr1"
+      <div
+        className="inline-block animated mr1"
         onClick={[Function]}
-        role="img"
+        role="button"
       >
         ⬜️
-      </span>
+      </div>
       <span>
         Test recipe 2
          

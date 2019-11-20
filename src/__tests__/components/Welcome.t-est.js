@@ -14,7 +14,6 @@ describe('<Welcome />', () => {
       </BrowserRouter>,
     );
     tree = component.toJSON();
-
     expect(tree).toMatchSnapshot();
   });
 });

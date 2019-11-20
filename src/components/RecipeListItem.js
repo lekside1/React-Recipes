@@ -1,6 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Checkbox from './Checkbox';
 
 const RecipeListItem = ({
   recipe,
@@ -10,20 +11,16 @@ const RecipeListItem = ({
 }) => (
   <li
     key={recipe.id}
-    className="py2 border-bottom border-bottom-dashed pointer"
+    className="py2 border-bottom border-bottom-dashed pointer nowrap"
     onClick={() => onClick(recipe.id)}
   >
-    <span
-      className="mr1"
+    <Checkbox
+      active={favorited}
       onClick={e => {
         e.stopPropagation();
         onFavorited(recipe.id);
       }}
-      role="img"
-      aria-label="favorite"
-    >
-      {favorited ? '✅' : '⬜️'}
-    </span>
+    />
     <span>{recipe.name} </span>
     <span>{recipe.category}</span>
     <span>

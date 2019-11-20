@@ -1,32 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
-
-const FooterLink = ({ children, ...props }) => (
-  <NavLink
-    exact
-    className="p1 m2 white rounded"
-    activeClassName="bg-black"
-    {...props}
-  >
-    {children}
-  </NavLink>
-);
+import HyperLink from './HyperLink';
 
 const Footer = () => (
   <footer>
     <div className="mt3">
       <div className="phantom" />
       <div className="footer">
-        <FooterLink to="/">Welcome</FooterLink>
-        <FooterLink to="/about">About</FooterLink>
+        <HyperLink to="/" activeClassName="bg-black">Welcome</HyperLink>
+        <HyperLink to="/about" activeClassName="bg-black">About</HyperLink>
       </div>
     </div>
   </footer>
 );
-
-FooterLink.propTypes = {
-  children: PropTypes.node,
-};
 
 export default Footer;
