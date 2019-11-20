@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeDetail /> Should render RecipeDetail if no recipe 1`] = `
+<p
+  className="h3 p2 bg-gray italic center"
+  style={Object {}}
+>
+  No recipe selected
+</p>
+`;
+
+exports[`<RecipeDetail /> Should render RecipeDetail recipe 1`] = `
+<div
+  className="p2 bg-gray"
+  style={Object {}}
+>
+  <h2
+    className="h2"
+  >
+    Test Recipe
+  </h2>
+  <div
+    className="flex flex-column"
+  >
+    <img
+      alt="Test Recipe"
+      className="fit"
+      src="test image url"
+    />
+    <div>
+      <span>
+        Dessert
+         
+      </span>
+      <span>
+        100
+         cal
+      </span>
+    </div>
+    <div>
+      <h3>
+        Ingredients
+      </h3>
+      <ul>
+        <li>
+          Ingredient 1
+        </li>
+        <li>
+          Ingredient 2
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>
+        Steps
+      </h3>
+      <ol>
+        <li>
+          Step 1
+        </li>
+        <li>
+          Step 2
+        </li>
+      </ol>
+    </div>
+    <div>
+      <a
+        className="text-decoration-none bg-lime"
+        href="/recipe/1"
+        onClick={[Function]}
+      >
+        <span
+          aria-label="more-detail"
+          role="img"
+        >
+          ➕
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;

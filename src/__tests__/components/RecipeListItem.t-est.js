@@ -14,6 +14,7 @@ const testRecipe = [
 describe('<RecipeListItem />', () => {
   let component;
   let tree;
+
   test('Should not break if no recipe passed', () => {
     expect(() => renderer.create(<RecipeListItem />)).not.toThrow();
   });
@@ -25,7 +26,7 @@ describe('<RecipeListItem />', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('Should render RecipeListItem with favorited', () => {
+  test('Should render RecipeListItem favorited recipe', () => {
     component = renderer.create(
       <RecipeListItem recipe={testRecipe} favorited />,
     );

@@ -15,7 +15,7 @@ const FooterLink = ({ children, ...props }) => (
 
 const Footer = () => (
   <footer>
-    <div>
+    <div className="mt3">
       <div className="phantom" />
       <div className="footer">
         <FooterLink to="/">Welcome</FooterLink>

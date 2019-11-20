@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
+<div>
+  <ul
+    className="list-reset"
+  >
+    <li
+      className="py2 border-bottom border-bottom-dashed pointer"
+      onClick={[Function]}
+    >
+      <span
+        aria-label="favorite"
+        className="mr1"
+        onClick={[Function]}
+        role="img"
+      >
+        ⬜️
+      </span>
+      <span>
+        Test recipe 1
+         
+      </span>
+      <span>
+        Dessert
+      </span>
+      <span>
+        
+      </span>
+    </li>
+    <li
+      className="py2 border-bottom border-bottom-dashed pointer"
+      onClick={[Function]}
+    >
+      <span
+        aria-label="favorite"
+        className="mr1"
+        onClick={[Function]}
+        role="img"
+      >
+        ⬜️
+      </span>
+      <span>
+        Test recipe 2
+         
+      </span>
+      <span>
+        Meat
+      </span>
+      <span>
+        
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
+<div>
+  <ul
+    className="list-reset"
+  >
+    <li
+      className="py2 border-bottom border-bottom-dashed pointer"
+      onClick={[Function]}
+    >
+      <span
+        aria-label="favorite"
+        className="mr1"
+        onClick={[Function]}
+        role="img"
+      >
+        ⬜️
+      </span>
+      <span>
+        Test recipe 1
+         
+      </span>
+      <span>
+        Dessert
+      </span>
+      <span>
+        
+      </span>
+    </li>
+    <li
+      className="py2 border-bottom border-bottom-dashed pointer"
+      onClick={[Function]}
+    >
+      <span
+        aria-label="favorite"
+        className="mr1"
+        onClick={[Function]}
+        role="img"
+      >
+        ⬜️
+      </span>
+      <span>
+        Test recipe 2
+         
+      </span>
+      <span>
+        Meat
+      </span>
+      <span>
+        
+      </span>
+    </li>
+  </ul>
+</div>
+`;

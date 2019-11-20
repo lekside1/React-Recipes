@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Render Header 1`] = `
+<footer>
+  <div
+    className="mt3"
+  >
+    <div
+      className="phantom"
+    />
+    <div
+      className="footer"
+    >
+      <a
+        aria-current="page"
+        className="p1 m2 white rounded bg-black"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Welcome
+      </a>
+      <a
+        aria-current={null}
+        className="p1 m2 white rounded"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </div>
+  </div>
+</footer>
+`;

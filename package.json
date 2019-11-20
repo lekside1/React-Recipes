@@ -53,6 +53,7 @@
     "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
     "react-test-renderer": "^16.12.0",
+    "recompose": "^0.30.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",

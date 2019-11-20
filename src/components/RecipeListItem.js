@@ -26,16 +26,21 @@ const RecipeListItem = ({
     </span>
     <span>{recipe.name} </span>
     <span>{recipe.category}</span>
-
-    <span
-      className="ml1"
-      onClick={() => (onClick(recipe.id))}
-      role="img"
-      aria-label="more-details"
-    >
-      <Link className="text-decoration-none" to={`/recipe/${recipe.id}`}>
-        {favorited ? '➕' : ''}
-      </Link>
+    <span>
+      {favorited
+        ? (
+          <Link to={`/recipe/${recipe.id}`} className="text-decoration-none">
+            <span
+              className="ml1"
+              onClick={() => onClick(recipe.id)}
+              role="img"
+              aria-label="detail"
+            >
+              ➕
+            </span>
+          </Link>
+        )
+        : ''}
     </span>
   </li>
 );

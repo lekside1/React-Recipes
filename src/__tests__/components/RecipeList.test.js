@@ -16,22 +16,24 @@ const testRecipes = [
 ];
 
 describe('<RecipeList />', () => {
+  let component;
   let tree;
+
   test('Should not break if no recipes passed', () => {
     expect(() => renderer.create(<RecipeList />)).not.toThrow();
   });
 
   test('Should render RecipeList recipes', () => {
-    tree = renderer.create(<RecipeList recipes={testRecipes} />).toJSON();
-
+    component = renderer.create(<RecipeList recipes={testRecipes} />);
+    tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  test('Should render RecipeList with favorites', () => {
-    tree = renderer.create(
-      <RecipeList recipes={testRecipes} favorites={[1]} />,
-    ).toJSON();
-
+  test('Should render RecipeList recipes and favorites', () => {
+    component = renderer.create(
+      <RecipeList recipes={testRecipes} favorites={[0]} />,
+    );
+    tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

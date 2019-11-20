@@ -19,7 +19,6 @@ const Header = () => (
     <nav>
       <HeaderLink to="/home">Home</HeaderLink>
       <HeaderLink to="/favorites">Favorites</HeaderLink>
-      {/* <HeaderLink to="/welcome">Welcome</HeaderLink> */}
     </nav>
   </header>
 );
