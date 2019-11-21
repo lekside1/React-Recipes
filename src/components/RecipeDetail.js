@@ -23,10 +23,8 @@ const ZeroState = ({ style, className }) => (
   </p>
 );
 
-
 const RecipeDetail = ({ recipe, style, className }) => {
   const currentLoc = window.location.pathname;
-
   return (
     <div style={style} className={classNames('p2 bg-gray', className)}>
       <h2 className="h2">{recipe.name}</h2>
@@ -56,12 +54,12 @@ const RecipeDetail = ({ recipe, style, className }) => {
           {recipe && (
             currentLoc === `/recipe/${recipe.id}`
               ? (
-                <Link to="/home" className={classNames('text-decoration-none bg-lime')}>
+                <Link to="/home" className={classNames('text-decoration-none pl1 ml1 bg-lime')}>
                   <span role="img" aria-label="less-detail">➖</span>
                 </Link>
               )
               : (
-                <Link to={`/recipe/${recipe.id}`} className={classNames('text-decoration-none bg-lime')}>
+                <Link to={`/recipe/${recipe.id}`} className={classNames('text-decoration-none pl1 ml1 bg-lime')}>
                   <span role="img" aria-label="more-detail">➕</span>
                 </Link>
               ))}

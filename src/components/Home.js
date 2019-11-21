@@ -38,7 +38,7 @@ class Home extends React.Component {
           </div>
           <RecipeDetail
             recipe={currentRecipe}
-            className="ml4"
+            className="ml3"
             style={{ flex: 5 }}
           />
         </main>

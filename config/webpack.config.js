@@ -5,12 +5,12 @@ require('dotenv').config();
 
 module.exports = {
   // mode: 'development',
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname, '../src'),
   entry: ['whatwg-fetch', './index.js'],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: './bundle.js',
-    publicPath: '/',
+    // publicPath: '/',
   },
   module: {
     rules: [
