@@ -7,7 +7,7 @@ const NotFound = () => (
   <div className="outer-div">
     <ImageBackground src={img} alt="rickandmorty" style={{ width: '75%' }} />
     <Link to="/home" className="link">
-      <button className="rounded btn bold pointer" type="button">
+      <button className="rounded btn bold pointer glow-btn" type="button">
         Dont Even Trip Dawg, Go Home
       </button>
     </Link>

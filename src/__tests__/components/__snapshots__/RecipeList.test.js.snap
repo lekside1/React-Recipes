@@ -6,7 +6,7 @@ exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
     className="list-reset"
   >
     <li
-      className="py2 border-bottom border-bottom-dashed pointer nowrap"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
       onClick={[Function]}
     >
       <div
@@ -23,12 +23,14 @@ exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
       <span>
         Dessert
       </span>
-      <span>
+      <span
+        className="ml1"
+      >
         
       </span>
     </li>
     <li
-      className="py2 border-bottom border-bottom-dashed pointer nowrap"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
       onClick={[Function]}
     >
       <div
@@ -45,7 +47,9 @@ exports[`<RecipeList /> Should render RecipeList recipes 1`] = `
       <span>
         Meat
       </span>
-      <span>
+      <span
+        className="ml1"
+      >
         
       </span>
     </li>
@@ -59,7 +63,7 @@ exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
     className="list-reset"
   >
     <li
-      className="py2 border-bottom border-bottom-dashed pointer nowrap"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
       onClick={[Function]}
     >
       <div
@@ -76,12 +80,14 @@ exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
       <span>
         Dessert
       </span>
-      <span>
+      <span
+        className="ml1"
+      >
         
       </span>
     </li>
     <li
-      className="py2 border-bottom border-bottom-dashed pointer nowrap"
+      className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
       onClick={[Function]}
     >
       <div
@@ -98,7 +104,9 @@ exports[`<RecipeList /> Should render RecipeList recipes and favorites 1`] = `
       <span>
         Meat
       </span>
-      <span>
+      <span
+        className="ml1"
+      >
         
       </span>
     </li>

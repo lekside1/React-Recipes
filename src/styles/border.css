@@ -1,3 +1,11 @@
 .border-bottom-dashed {
     border-bottom-style: dashed;
 }
+
+.border-rad {
+    border-radius: 5px;
+}
+
+.plus-minus {
+    padding-left: 4px;
+}

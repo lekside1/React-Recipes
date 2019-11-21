@@ -19,7 +19,7 @@ exports[`Should Render Header 1`] = `
   <nav>
     <a
       aria-current={null}
-      className="p1 mx2 white rounded text-decoration-none"
+      className="p1 mx2 white rounded text-decoration-none hvr"
       href="/home"
       onClick={[Function]}
     >
@@ -27,7 +27,7 @@ exports[`Should Render Header 1`] = `
     </a>
     <a
       aria-current={null}
-      className="p1 mx2 white rounded text-decoration-none"
+      className="p1 mx2 white rounded text-decoration-none hvr"
       href="/favorites"
       onClick={[Function]}
     >

@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
 import Footer from '../../components/Footer';
 
-it('Should Render Header', () => {
+it('Should Render Footer', () => {
   const tree = renderer.create(
     <BrowserRouter>
       <Footer />

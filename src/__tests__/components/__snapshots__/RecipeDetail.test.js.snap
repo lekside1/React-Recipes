@@ -65,12 +65,13 @@ exports[`<RecipeDetail /> Should render RecipeDetail recipe 1`] = `
     </div>
     <div>
       <a
-        className="text-decoration-none pl1 ml1 bg-lime"
+        className="text-decoration-none ml1 border-rad hvrLink"
         href="/recipe/1"
         onClick={[Function]}
       >
         <span
           aria-label="more-detail"
+          className="plus-minus"
           role="img"
         >
           ➕

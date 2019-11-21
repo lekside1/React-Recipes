@@ -1,0 +1,19 @@
+.hvr:hover {
+    color: #70E520;
+}
+
+.hvrLink:hover {
+    background-color: #70E520;
+}
+
+.hvrList:hover {
+    color: #70E520;
+    border-color: white;
+}
+
+.glow-btn:hover {
+    background-color: var(--gray);
+    color: #70E520;
+    box-shadow: 0 5px 15px #70E520;
+    border-color: #70E520;
+}

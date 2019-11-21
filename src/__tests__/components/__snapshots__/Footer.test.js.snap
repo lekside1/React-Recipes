@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should Render Header 1`] = `
+exports[`Should Render Footer 1`] = `
 <footer>
   <div
     className="mt3"
@@ -13,7 +13,7 @@ exports[`Should Render Header 1`] = `
     >
       <a
         aria-current="page"
-        className="p1 mx2 white rounded text-decoration-none bg-black"
+        className="p1 mx2 white rounded text-decoration-none hvr bg-black"
         href="/"
         onClick={[Function]}
         style={Object {}}
@@ -22,7 +22,7 @@ exports[`Should Render Header 1`] = `
       </a>
       <a
         aria-current={null}
-        className="p1 mx2 white rounded text-decoration-none"
+        className="p1 mx2 white rounded text-decoration-none hvr"
         href="/about"
         onClick={[Function]}
       >

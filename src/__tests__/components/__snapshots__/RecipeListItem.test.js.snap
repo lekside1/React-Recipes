@@ -3,7 +3,7 @@
 exports[`<RecipeListItem /> Should render favorited state 1`] = `
 Array [
   <li
-    className="py2 border-bottom border-bottom-dashed pointer nowrap"
+    className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
     onClick={[Function]}
   >
     <div
@@ -20,15 +20,17 @@ Array [
     <span>
       Dessert
     </span>
-    <span>
+    <span
+      className="ml1"
+    >
       <a
-        className="text-decoration-none"
+        className="text-decoration-none hvrLink border-rad"
         href="/recipe/1"
         onClick={[Function]}
       >
         <span
           aria-label="detail"
-          className="ml1"
+          className="plus-minus"
           onClick={[Function]}
           role="img"
         >
@@ -44,7 +46,7 @@ Array [
 exports[`<RecipeListItem /> Should render passed recipe 1`] = `
 Array [
   <li
-    className="py2 border-bottom border-bottom-dashed pointer nowrap"
+    className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
     onClick={[Function]}
   >
     <div
@@ -61,7 +63,9 @@ Array [
     <span>
       Dessert
     </span>
-    <span>
+    <span
+      className="ml1"
+    >
       
     </span>
   </li>,

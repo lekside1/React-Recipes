@@ -7,6 +7,7 @@
 @import "./shame";
 @import "./notfound";
 @import "./footer";
+@import "./hover";
 
 :root {
     --h1: 70px;

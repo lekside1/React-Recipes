@@ -11,7 +11,7 @@ const RecipeListItem = ({
 }) => (
   <li
     key={recipe.id}
-    className="py2 border-bottom border-bottom-dashed pointer nowrap"
+    className="py2 border-bottom border-bottom-dashed pointer nowrap hvrList"
     onClick={() => onClick(recipe.id)}
   >
     <Checkbox
@@ -23,17 +23,16 @@ const RecipeListItem = ({
     />
     <span>{recipe.name} </span>
     <span>{recipe.category}</span>
-    <span>
+    <span className="ml1">
       {favorited
         ? (
-          <Link to={`/recipe/${recipe.id}`} className="text-decoration-none">
+          <Link to={`/recipe/${recipe.id}`} className="text-decoration-none hvrLink border-rad">
             <span
-              className="ml1"
+              className="plus-minus"
               onClick={() => onClick(recipe.id)}
               role="img"
               aria-label="detail"
-            >
-              ➕
+            >➕
             </span>
           </Link>
         )

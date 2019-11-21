@@ -54,13 +54,13 @@ const RecipeDetail = ({ recipe, style, className }) => {
           {recipe && (
             currentLoc === `/recipe/${recipe.id}`
               ? (
-                <Link to="/home" className={classNames('text-decoration-none pl1 ml1 bg-lime')}>
-                  <span role="img" aria-label="less-detail">➖</span>
+                <Link to="/home" className={classNames('text-decoration-none ml1 border-rad hvrLink')}>
+                  <span role="img" aria-label="less-detail" className="plus-minus">➖</span>
                 </Link>
               )
               : (
-                <Link to={`/recipe/${recipe.id}`} className={classNames('text-decoration-none pl1 ml1 bg-lime')}>
-                  <span role="img" aria-label="more-detail">➕</span>
+                <Link to={`/recipe/${recipe.id}`} className={classNames('text-decoration-none ml1 border-rad hvrLink')}>
+                  <span role="img" aria-label="more-detail" className="plus-minus">➕</span>
                 </Link>
               ))}
         </div>

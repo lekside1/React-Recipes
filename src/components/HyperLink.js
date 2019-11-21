@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const HyperLink = ({ children, ...props }) => (
   <NavLink
     exact
-    className="p1 mx2 white rounded text-decoration-none"
+    className="p1 mx2 white rounded text-decoration-none hvr"
     activeClassName="bg-gray"
     {...props}
   >
