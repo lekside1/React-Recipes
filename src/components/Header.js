@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HyperLink from './HyperLink';
+import HyperLink from './containers/HyperLink';
 
 const Header = () => (
   <header className="flex items-center justify-between px4 mb1">

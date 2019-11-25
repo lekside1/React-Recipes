@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RecipeList from '../RecipeList';
-import RecipeDetail from '../RecipeDetail';
+import RecipeList from './RecipeList';
+import RecipeDetail from './RecipeDetail';
 
 class Home extends React.Component {
   constructor(props) {

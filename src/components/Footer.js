@@ -1,5 +1,5 @@
 import React from 'react';
-import HyperLink from './HyperLink';
+import HyperLink from './containers/HyperLink';
 
 const Footer = () => (
   <footer>
