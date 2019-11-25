@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ImageBackground from './ImageBackground';
+import ImageBackground from './containers/ImageBackground';
 import img from '../static/images/rickandmorty404.png'; /* image by https://www.reddit.com/user/Smugglers/ */
 
 const NotFound = () => (

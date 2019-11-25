@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Welcome from './Welcome';
-import Home from './Home';
+import Home from './containers/Home';
 import Favorites from './Favorites';
 import Recipe from './Recipe';
 import NotFound from './NotFound';

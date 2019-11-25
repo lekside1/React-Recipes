@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1574701768240" clover="3.2.0">
+  <project timestamp="1574701768240" name="All files">
+    <metrics statements="45" coveredstatements="42" conditionals="12" coveredconditionals="11" methods="22" coveredmethods="17" elements="79" coveredelements="70" complexity="0" loc="45" ncloc="45" packages="2" files="7" classes="7"/>
+    <package name="components">
+      <metrics statements="37" coveredstatements="35" conditionals="10" coveredconditionals="9" methods="18" coveredmethods="14"/>
+      <file name="Footer.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/Footer.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="Header.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/Header.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="HyperLink.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/HyperLink.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+      </file>
+      <file name="RecipeDetail.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/RecipeDetail.js">
+        <metrics statements="17" coveredstatements="16" conditionals="8" coveredconditionals="7" methods="7" coveredmethods="6"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="50" count="2" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="84" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="104" count="2" type="stmt"/>
+        <line num="105" count="2" type="stmt"/>
+      </file>
+      <file name="RecipeList.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/RecipeList.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+      <file name="RecipeListItem.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/RecipeListItem.js">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="3"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="51" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.containers">
+      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+      <file name="Checkbox.js" path="/Users/afaliu/Documents/Dev/React/recipes/src/components/containers/Checkbox.js">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="3"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

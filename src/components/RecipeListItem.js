@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Checkbox from './Checkbox';
+import Checkbox from './containers/Checkbox';
 
 const RecipeListItem = ({
   recipe,

@@ -10,7 +10,8 @@
     "build": "./node_modules/.bin/webpack -p --config ./config/webpack.prod.config.js",
     "lint": "./node_modules/.bin/eslint ./src",
     "test": "./node_modules/.bin/jest",
-    "watch": "./node_modules/.bin/jest --watchAll",
+    "test:watch": "./node_modules/.bin/jest --watchAll --verbose",
+    "test:coverage": "./node_modules/.bin/jest --verbose --coverage",
     "precommit": "lint-staged"
   },
   "lint-staged": {
