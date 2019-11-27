@@ -11,4 +11,10 @@ ImageBackground.propTypes = {
   style: PropTypes.object,
 };
 
+ImageBackground.defaultProps = {
+  src: '',
+  alt: '',
+  style: {},
+};
+
 export default ImageBackground;
