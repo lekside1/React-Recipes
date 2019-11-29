@@ -8,6 +8,7 @@ const Header = () => (
     <nav>
       <HyperLink to="/home">Home</HyperLink>
       <HyperLink to="/favorites">Favorites</HyperLink>
+      <HyperLink to="/accordionTest">AccordionTest</HyperLink>
     </nav>
   </header>
 );

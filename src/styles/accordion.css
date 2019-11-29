@@ -1,0 +1,11 @@
+.scenario {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.selector {
+    cursor: pointer;
+}
+.selector:hover {
+    background-color: lightgreen;
+}

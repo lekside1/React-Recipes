@@ -8,6 +8,7 @@ import Favorites from './Favorites';
 import Recipe from './Recipe';
 import NotFound from './NotFound';
 import Footer from './Footer';
+import AccordionTest from './AccordionTest/AccordionTest';
 
 class App extends React.Component {
   constructor(props) {
@@ -56,6 +57,7 @@ class App extends React.Component {
                 <Favorites state={this.state} toggleFavorite={this.toggleFavorite} />
               )}
             />
+            <Route path="/accordionTest" component={AccordionTest} />
             <Route path="/favourites"><Redirect to="/favorites" /></Route>
             <Route path="/recipe/:id" component={Recipe} />
             <Route component={NotFound} />

@@ -8,6 +8,7 @@
 @import "./notfound";
 @import "./footer";
 @import "./hover";
+@import "./accordion";
 
 :root {
     --h1: 70px;
@@ -17,6 +18,7 @@
 html {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
