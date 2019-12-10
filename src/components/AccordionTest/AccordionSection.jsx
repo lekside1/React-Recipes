@@ -26,19 +26,20 @@ class AccordionSection extends Component {
         >
           <div onClick={onClick} className="selector">
             <div style={{ float: 'left' }} className="mr1 ml1">
-              {!isOpen && <span>&#9658;</span>}
-              {isOpen && <span>&#9660;</span>}
+              {isOpen ? <span>&#9660;</span> : <span>&#9658;</span>}
             </div>
             <span className="mr1">
-              {!isOpen && <span role="img" aria-label="closed">📁</span>}
-              {isOpen && <span role="img" aria-label="open">📂</span>}
+              {isOpen
+                ? <span role="img" aria-label="open">📂</span>
+                : <span role="img" aria-label="closed">📁</span>}
             </span>
             {label}
           </div>
           <div className="pl4 selector">
             {isOpen && (
               <HyperLink to={`/${this.props.children.name}`} className="ml1 scenario">
-                <span role="img" aria-label="file">📄 {this.props.children}</span>
+                <span role="img" aria-label="file">📄</span>
+                {this.props.children}
               </HyperLink>
             )}
           </div>

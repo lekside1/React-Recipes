@@ -4,7 +4,7 @@
     display: block;
 }
 .selector {
-    cursor: pointer;
+    cursor: default;
 }
 .selector:hover {
     background-color: lightgreen;
