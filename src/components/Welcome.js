@@ -1,23 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { Switch, Redirect } from 'react-router-dom';
 
+const Welcome = () => {
+  const [redirect, setRedirect] = useState(false);
 
-class Welcome extends React.Component {
-  constructor(props) {
-    super(props);
+  useEffect(() => {
+    setTimeout(() => setRedirect(true), 3000);
+  });
 
-    this.state = {
-      redirect: false,
-    };
-  }
-
-  componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 3000);
-  }
-
-  render() {
-    return this.state.redirect
+  return (
+    redirect
       ? <Switch><Redirect to="/home" /></Switch>
       : (
         <Spring
@@ -31,8 +24,8 @@ class Welcome extends React.Component {
             </div>
           )}
         </Spring>
-      );
-  }
-}
+      )
+  );
+};
 
 export default Welcome;
