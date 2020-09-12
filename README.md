@@ -4,19 +4,20 @@ A Recipe App written in React JS
 
 Choose your favorite Recipes 
 
-How to run:
 
-Use npm or yarn
+How to run: 
 
-$ npm install or $ yarn install
+Use npm or yarn 
 
-Run scripts using npm or yarn
+    $ npm install or $ yarn install
+    
+Run scripts using npm or yarn 
 
-$ npm start
-$ npm dev 
-$ npm build 
-$ npm lint 
-$ npm test 
-$ npm test:watch 
-$ npm test:coverage 
-$ npm precommit 
+    $ npm start
+    $ npm dev 
+    $ npm build 
+    $ npm lint 
+    $ npm test 
+    $ npm test:watch 
+    $ npm test:coverage 
+    $ npm precommit 
