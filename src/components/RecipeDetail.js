@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { compose, branch, renderComponent } from 'recompose';
-import recipe6img from '../static/images/recipe6.jpeg'; /* image from https://www.allrecipes.com/recipe/8669/chicken-cordon-bleu-ii/ */
+
 
 const LoadingState = ({ style, className }) => (
   <p
@@ -29,7 +29,7 @@ const RecipeDetail = ({ recipe, style, className }) => {
     <div style={style} className={classNames('p2 bg-gray', className)}>
       <h2 className="h2">{recipe.name}</h2>
       <div className="flex flex-column">
-        <img src={recipe.id === 6 ? recipe6img : recipe.image} alt={recipe.name} className="fit" />
+        <img src={recipe.image} alt={recipe.name} className="fit" />
         <div>
           <span>{recipe.category} </span>
           <span>{recipe.calories} cal</span>

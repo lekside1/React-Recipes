@@ -8,7 +8,6 @@
 @import "./notfound";
 @import "./footer";
 @import "./hover";
-@import "./searchbar.css";
 
 :root {
     --h1: 70px;

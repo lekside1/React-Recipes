@@ -21,8 +21,7 @@ const RecipeListItem = ({
         onFavorited(recipe.id);
       }}
     />
-    <span>{recipe.name}</span>
-    <span className="green"> | </span>
+    <span>{recipe.name} </span>
     <span>{recipe.category}</span>
     <span className="ml1">
       {favorited
