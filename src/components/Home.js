@@ -1,51 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import RecipeList from './RecipeList';
 import RecipeDetail from './RecipeDetail';
+import useSearchRecipes from './SearchRecipes';
+import SearchBar from './containers/SearchBar';
+import API_URL from '../static/recipes/recipesURL';
 
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
+const Home = (props) => {
+  const [currentRecipe, setCurrentRecipe] = useState(null);
+  const { recipes, favorites } = props.state;
+  const { recipeList, searchValue, onInputSearchValue } = useSearchRecipes(recipes);
 
-    this.state = {
-      currentRecipe: null,
-    };
-  }
-
-  onRecipeClick = id => {
+  const onRecipeClick = id => {
     fetch(`${API_URL}/v1/recipes/${id}`)
       .then(res => res.json())
       .then(recipe => {
-        this.setState({ currentRecipe: recipe });
+        setCurrentRecipe(recipe);
       });
   };
 
-  render() {
-    const { currentRecipe } = this.state;
-    const { recipes, favorites } = this.props.state;
-
-    return (
-      <div>
-        <main className="px4 flex">
-          <div style={{ flex: 3 }} className="p1">
-            <h2 className="h2">Recipes</h2>
-            <RecipeList
-              recipes={recipes}
-              favorites={favorites}
-              onClick={this.onRecipeClick}
-              onFavorited={this.props.toggleFavorite}
-            />
-          </div>
-          <RecipeDetail
-            recipe={currentRecipe}
-            className="ml3"
-            style={{ flex: 5 }}
+  return (
+    <>
+      <main className="px4 flex">
+        <div style={{ flex: 3 }} className="p1">
+          <h2 className="h2">Recipes</h2>
+          <SearchBar
+            searchValue={searchValue}
+            onInputSearchValue={onInputSearchValue}
           />
-        </main>
-      </div>
-    );
-  }
-}
+          <RecipeList
+            recipes={recipeList || recipes}
+            favorites={favorites}
+            onClick={onRecipeClick}
+            onFavorited={props.toggleFavorite}
+          />
+        </div>
+        <RecipeDetail
+          recipe={currentRecipe}
+          className="ml3"
+          style={{ flex: 5 }}
+        />
+      </main>
+    </>
+  );
+};
 
 Home.propTypes = {
   state: PropTypes.object,

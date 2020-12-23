@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RecipeDetail from './RecipeDetail';
+import API_URL from '../static/recipes/recipesURL';
 
 class Recipe extends React.Component {
   constructor(props) {
@@ -13,8 +14,8 @@ class Recipe extends React.Component {
 
   componentDidMount() {
     const { id } = this.props.match.params;
-
-    fetch(`${API_URL}/v1/recipes/${id}`)
+    const url = `${API_URL}/v1/recipes/${id}`;
+    fetch(url)
       .then(res => res.json())
       .then(recipe => {
         this.setState({ recipe });
