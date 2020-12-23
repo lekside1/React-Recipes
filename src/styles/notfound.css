@@ -7,13 +7,14 @@
 
 .link {
     position: absolute;
-    bottom: 35px;
-    left: -5px;
-    width: inherit;
+    bottom: 5%;
+    left: -1%;
+    width: 100%;
 }
 
 .btn {
-    height: 35px;
-    font-size: smaller;
-    background-color: #70E520;
+    height: 2rem;
+    max-width: 20%;
+    font-size: 0.5em;
+    background-color: var(--green);
 }
