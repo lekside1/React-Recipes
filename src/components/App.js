@@ -8,6 +8,7 @@ import Favorites from './Favorites';
 import Recipe from './Recipe';
 import NotFound from './NotFound';
 import Footer from './Footer';
+import API_URL from '../static/recipes/recipesURL';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,7 +21,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`${API_URL}/v1/recipes`)
+    const url = `${API_URL}/v1/recipes`;
+    fetch(url)
       .then(res => res.json())
       .then(recipes => {
         this.setState({ recipes });
